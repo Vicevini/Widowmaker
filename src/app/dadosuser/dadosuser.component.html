@@ -1,0 +1,60 @@
+<app-header></app-header>
+<app-resumouser></app-resumouser>
+
+<div id="conteudo-right" class="card" *ngFor="let detalhe of detalhe">
+    <div class="painel-dados">
+        <h2>Minhas informações</h2> <br>
+        <div class="dados">
+            <table style="width:100%">
+
+                <tr>
+                    <td> <b> Nome </b></td>
+                    <td> <b>Idade </b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.name}}</td>
+                    <td>{{detalhe.idade}}</td>
+                </tr>
+
+                <tr>
+                    <td><b> Sobrenome </b></td>
+                    <td> <b> Cargo</b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.sobrenome}}</td>
+                    <td>{{detalhe.cargo}}</td>
+                </tr>
+
+                <tr>
+                    <td><b> CPF </b></td>
+
+                    <td><b> Tempo de forma </b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.cpf}}</td>
+                    <td>{{detalhe.temposervico}}</td>
+                </tr>
+
+                <tr>
+                    <td><b> RG </b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.rg}}</td>
+                </tr>
+
+                <tr>
+                    <td><b> E-mail </b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.email}}</td>
+                </tr>
+                <tr>
+                    <td><b>Celular</b></td>
+                </tr>
+                <tr>
+                    <td>{{detalhe.celular}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

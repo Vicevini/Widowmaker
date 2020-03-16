@@ -1,0 +1,40 @@
+#conteudo-left {
+    width: 30%;
+    height: 600px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border: 2cm;
+    border-radius: 20px 20px;
+    border-color: black;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.icons {
+    height: 40px;
+}
+
+.painel-user {
+    padding: 2px 16px;
+}
+
+.painel-user h2 {
+    text-align: center;
+}
+
+.painel-content {
+    text-decoration: underline;
+    padding: 2px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

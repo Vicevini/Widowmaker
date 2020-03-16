@@ -1,0 +1,81 @@
+body {
+    /*background: rgb(11, 192, 216);
+rgb(249, 253, 4)*/
+    background-size: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+header .h3 {
+    font-size: small;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 363);
+}
+
+div {
+    text-align: left;
+    padding: 5px;
+}
+
+img {
+    border-radius: 5px;
+    height: 300px;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px 20px;
+    border-color: rgb(251, 255, 0);
+    text-align: left;
+}
+
+button {
+    background-color: rgb(249, 253, 4);
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}

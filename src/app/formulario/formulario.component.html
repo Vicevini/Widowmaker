@@ -1,0 +1,21 @@
+<section>
+    <div id="menulogin">
+
+        <form class="formulario" [formGroup]="formularioDeLogin">
+            <div class="imgcontainer">
+                <img src="../../assets/img/logoforma.png" alt="Logo">
+            </div>
+
+            <div class="container">
+                <label for="email"><b>Email:</b></label><br>
+                <input type="email" id="email" placeholder="Insira seu e-mail" name="email" required formControlName="email"><br>
+
+                <label for="pwd"><b>Senha:</b></label><br>
+                <input type="password" id="password" placeholder="Insira sua senha" name="Senha" required formControlName="senha"><br><br>
+
+                <button type="submit" routerLink="/dadosuser/">Entrar</button>
+            </div>
+
+        </form>
+    </div>
+</section>
