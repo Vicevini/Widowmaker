@@ -1,5 +1,5 @@
 export class DetalhesUsuario{
-  public name: string;
+  public nome: string;
   public sobrenome: string;
   public cpf: string;
   public rg: string;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DetalhesUsuario } from '../../shared/models/detalhesusuario';
+import { DadosService } from '../dados.service';
 
 @Component({
   selector: 'app-dadosuser',
@@ -8,25 +9,19 @@ import { DetalhesUsuario } from '../../shared/models/detalhesusuario';
 })
 export class DadosuserComponent implements OnInit {
 
-  detalhe:DetalhesUsuario[];
-  constructor() { }
+  detalhe: Array<any>;
+
+
+  constructor(private dadosService: DadosService) { }
+
 
   ngOnInit() {
-    this.getDetalhesUsuario();
+    this.listar();
   }
 
-  getDetalhesUsuario(){
-    this.detalhe=[{
-      name : 'Augusto',
-      sobrenome : 'Limeira',
-      cpf : '49878532649',
-      rg : '987373548',
-      email : 'limeiraaugusto@live.com',
-      celular : '11968594132',
-      idade : '20',
-      cargo : 'gerente',
-      temposervico : '2'
-    },
-    ]
+
+
+  listar() {
+    this.dadosService.listar().subscribe(infos => this.detalhe = infos);
   }
 }

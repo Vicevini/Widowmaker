@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DadosService } from '../dados.service';
 
 @Component({
   selector: 'app-resumouser',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumouserComponent implements OnInit {
 
-  constructor() { }
+  detalhe: Array<any>;
+  constructor(private dadosService: DadosService) { }
 
   ngOnInit(): void {
+    this.listar();
   }
 
+  listar() {
+    this.dadosService.listar().subscribe(infos => this.detalhe = infos);
+  }
 }

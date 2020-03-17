@@ -1,10 +1,10 @@
-<div id="conteudo-left" class="card">
+<div id="conteudo-left" class="card" *ngFor="let detalhe of detalhe">
 
     <div class="painel-user">
 
-        <h2> Olá, Vinicius Oliveira </h2> <br>
-        <div class="painel-img">
-            <img src="../../assets/img/depo2.jpg" alt="Avatar"> <br>
+        <h2> Olá, {{detalhe.nome}} </h2> <br>
+        <div class="painel-img" *ngFor="let imagem of foto">
+            <img [src]="imagem.foto[0].url" alt="Avatar"> <br>
 
 
             <div class="painel-content">

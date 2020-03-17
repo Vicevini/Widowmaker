@@ -1,0 +1,14 @@
+{
+    "usuario": [{
+        "nome": "Jon Doe",
+        "sobrenome": "Stark",
+        "dtNascimento": "13/03/1996",
+        "cargo": "Desenvolvedor",
+        "cpf": "22233366638",
+        "rg": "35136359",
+        "email": "jondoe@gmail.com",
+        "dataAdmissao": "31/05/2001",
+        "foto": "https://i.ytimg.com/vi/YttPJlBFG-c/hqdefault.jpg",
+        "celular": "11988556677"
+    }]
+}
