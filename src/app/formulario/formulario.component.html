@@ -13,7 +13,7 @@
                 <label for="pwd"><b>Senha:</b></label><br>
                 <input type="password" id="password" required placeholder="Insira sua senha" name="Senha" formControlName="password"><br><br>
 
-                <button type="submit" routerLink="/dadosuser/">Entrar</button>
+                <button type="button" class="btn btn-primary" (click)="enviarDados()" routerLink="/dadosuser/">Entrar</button>
             </div>
 
         </form>

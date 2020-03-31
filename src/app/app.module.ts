@@ -1,3 +1,4 @@
+import { AuthService } from './formulario/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -31,7 +32,7 @@ import { DadosService } from './dados.service';
     // Adicionando o módulo de formulários reativos no módulo da nossa aplicação
     ReactiveFormsModule
   ],
-  providers: [ DadosService ],
+  providers: [ DadosService, AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
